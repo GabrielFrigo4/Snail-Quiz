@@ -1,0 +1,47 @@
+versão: 1.0
+
+funções:
+	prefixo = gui
+	tudas as funções create retorna um GameObject
+
+button:
+	//variaveis com valores basicos
+	width = 280;		//largura do botão
+	height = 80;		//altura do botão
+	style = -1;			//imagem do botão (é um sprite, -1 fica no basico)
+	font = -1;			//fonte da escrita (-1 fica no basico)
+	color = c_black;	//cor da escrita (-1 fica no basico)
+	text = "Button";	//texto
+	animation = true;	//se verdadeiro ele sobe quando o mouse entra no botão
+	hover = 0;			//é uma variavel para animação (animação de cor tambem)
+	script = -1;		//é a função que vai ser chamada quando clicado(-1 não chama nada)
+	
+slider:
+	//variaveis com valores basicos
+	value = 0			//valor do slider
+	max_value = 1;		//valor maxímo do slider
+	width = 128;		//largura do slider
+	height = 8;			//altura do slider
+	selected = false;	//variavel para ver se ele foi selecionado 
+	rang = false;		//variavel para ver se o mouse entra no slider
+	styleBar = -1;		//imagem do slider (é um sprite, -1 fica no basico)
+	styleButton = -1;	//imagem do botão (é um sprite, -1 fica no basico)
+	font = -1;			//fonte da escrita (-1 fica no basico)
+	color = c_white;	//cor da escrita (-1 fica no basico)
+	text = "Slider";	//texto que fica em cima do slider
+	
+textBox:
+	//variaveis com valores basicos
+	style = -1;			//imagem do textBox (é um sprite, -1 fica no basico)
+	font = -1;			//fonte da escrita (-1 fica no basico)
+	color = c_black;	//cor da escrita (-1 fica no basico)
+	text = "textBox";	//texto que fica em cima do slider
+	width = 70;			//largura do textBox
+	height = 30;		//altura do textBox
+	hover = 0;			//é uma variavel para animação de cor
+	sizeMax = 7;		//tamanho maximo de caracteres(quando criado o textBox, esse valor é alterado)
+	clicked = false;	//checa se foi selecionado
+	
+obs:
+	html5: para os botões funcionarem é preciso que a função seja do proprio objeto(essa função pode chamar outras funções e scripts) que esteja criando o botão, caso
+	contrario simplesmente não funcionara, bug do GMS2 na copilação javascript :(
